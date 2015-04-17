@@ -1,0 +1,20 @@
+#!/bin/sh
+
+link="$1"
+selection="$2"
+uname=`uname -s`
+
+copy_to_clipboard() {
+	if [ "r"$link = "r" ]; then
+		link=$selection
+	fi
+	mkdir -p /home/nkigen/Downloads/chrome-downloads
+	cd /home/nkigen/Downloads/chrome-downloads
+	zeinarmy.sh "dl" $link 
+}
+
+copy_to_clipboard <<EOF
+EOF
+
+#exit 0
+

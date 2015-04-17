@@ -13,6 +13,12 @@
       "contexts": ["selection"]
     },
     {
+      "name": "download_file",
+      "title": "Download URL",
+      "command": "scripts/download_file \"$SHELLAC_INFO_LINKURL\" \"$SHELLAC_INFO_SELECTIONTEXT\"",
+      "contexts": ["all"]
+    },
+    {
       "name": "mail_page_gnome",
       "title": "Mail this Page with Gnome Email App",
       "command": "scripts/mail_gnome \"$SHELLAC_TAB_URL\" \"$SHELLAC_TAB_TITLE\"",
